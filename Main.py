@@ -1,4 +1,5 @@
 import Game
+import os
 
 # create a chess board
 board = [[' ' for i in range(8)] for j in range(8)]
@@ -16,3 +17,5 @@ moveEnd = input('Enter End: ').split(" ")
 Game.MovePiece(board, (int(moveStart[0]), int(moveStart[1])), (int(moveEnd[0]), int(moveEnd[1])))
 
 Game.printTable(board)
+
+os.system("pause")
